@@ -1,0 +1,17 @@
+.page .main-container h1{
+    color:white;
+    font-weight: bolder;
+    font-size:80px;
+}
+
+.page .bgpng{
+    width:100%;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: calc(100vh - 84px);
+    background-image: url("../../../../assets/images/bg.png");
+    background-size: cover;
+    background-position: center center;
+    display:inline-block;
+}

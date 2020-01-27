@@ -1,0 +1,12 @@
+<div class="todo-app uk-text-center">
+    <h1>This is a Todo App to demonstrate:<br /> @Output @Input</h1>
+    <div class="add-new">
+        <form  #myform = "ngForm" (ngSubmit) = "onSubmit(myform)">
+            <input type="text" name="newtodo" ngModel class="uk-input" placeholder="eg. Wake me up when september ends..">
+            <button class="uk-button uk-button-primary uk-margin " type="submit">Submit</button>
+        </form>
+        
+    </div>
+
+    <app-todo-item *ngFor="let todo of todos" [todo]="todo" (deleteTodo)="deleteTodo($event)"></app-todo-item>
+</div>

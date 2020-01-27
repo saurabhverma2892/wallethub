@@ -1,0 +1,7 @@
+<div>
+    <p class="margin-top"><b>newsted route three-child works!</b><br /> Next up test passing data between pages</p>
+    <form #myform = "ngForm" (ngSubmit) = "onSubmit(myform)">
+        <input type="text" name="somemodel" ngModel class="uk-input" placeholder="type something to pass to the two-child nested route">
+        <button class="uk-button uk-button-primary uk-margin" type="submit">Submit</button>
+    </form>
+</div>
